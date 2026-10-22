@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "data_driven",
+  "version": "${version}",
+  "name": "DataDriven",
+  "description": "",
+  "authors": [
+    "Rosenoire_"
+  ],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/data_driven/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": ["dev.rosenoire.data_driven.data.DataDrivenDataGenerator"],
+    "client": ["dev.rosenoire.data_driven.client.DataDrivenClient"],
+    "main": ["dev.rosenoire.data_driven.shared.DataDriven"],
+    "cardinal-components-level": ["dev.rosenoire.data_driven.shared.DataDrivenLevelComponentInitializer"],
+    "cardinal-components-entity": ["dev.rosenoire.data_driven.shared.DataDrivenEntityComponentInitializer"]
+  },
+  "mixins": [
+    "data_driven.mixins.json"
+  ],
+  "custom": {
+    "cardinal-components": [
+    ]
+  },
+  "accessWidener": "data_driven.classtweaker",
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
