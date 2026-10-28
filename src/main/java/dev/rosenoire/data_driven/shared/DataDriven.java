@@ -1,5 +1,7 @@
 package dev.rosenoire.data_driven.shared;
 
+import dev.rosenoire.data_driven.shared.index.AllLogicProviders;
+import dev.rosenoire.data_driven.shared.index.AllNumericalProviders;
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.resources.Identifier;
 import org.jspecify.annotations.NonNull;
@@ -14,5 +16,7 @@ public class DataDriven implements ModInitializer {
 
     @Override
     public void onInitialize() {
+        AllLogicProviders.initialize();
+        AllNumericalProviders.initialize();
     }
 }

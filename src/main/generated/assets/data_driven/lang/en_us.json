@@ -1,0 +1,4 @@
+{
+  "commands.data_driven.particular.no_particle_found": "Could not find a particular particle at location \"%s\"!",
+  "commands.data_driven.particular.success": "Spawning particular particle \"%s\" at location: %d, %d, %d"
+}

@@ -4,6 +4,8 @@
   "package": "dev.rosenoire.data_driven.mixin",
   "compatibilityLevel": "JAVA_25",
   "mixins": [
+    "core.client_resources.MinecraftMixin",
+    "core.server_resources.ReloadableServerResourcesMixin"
   ],
   "client": [
   ],
